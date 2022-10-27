@@ -12,10 +12,7 @@ function Login() {
                     <label>Faculty ID : </label>
                     <input className="Login-input" type="text" name="" id="" />
                 </div>
-                <div className="L-I-div">
-                    <label>Faculty Name : </label>
-                    <input className="Login-input" type="text" name="" id="" />
-                </div>
+
                 <div className="L-I-div">
                     <label>Password : </label>
                     <input className="Login-input" type="text" name="" id="" />
