@@ -1,0 +1,47 @@
+header nav ul {
+    display: inline-flex;
+}
+header{
+    background: #FFCD38;
+}
+header ul li {
+    padding: 0px 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+li a {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul li a:hover {
+    color: red;
+}
+
+li a::after {
+    content: '';
+    margin: auto;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    left: 0;
+    top: 100%;
+    box-shadow: 0px 0px 8px;
+    background: #FFCD38;
+    transition: 0.6s ease-in-out;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+nav img{
+    position: relative;
+    height: 4.3vh;
+    top: 10px;
+    right: 40px;
+    float: right;
+}
