@@ -8,12 +8,11 @@ function Login() {
                     <label>Faculty ID : </label>
                     <input className="Login-input" type="text" name="" id="" />
                 </div>
-               
-
                 <div className="L-I-div">
-                    <label>Password : </label>
+                    <label>Faculty ID : </label>
                     <input className="Login-input" type="text" name="" id="" />
                 </div>
+
                 <a className="Login-btn" href="/attendace">Login</a>
                 <div className="Login-r-btn">
                     Don't have account ?  <a href="/register">Register</a>
