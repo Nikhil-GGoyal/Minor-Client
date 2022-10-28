@@ -3,14 +3,14 @@ function Header() {
     return (
         <>
             <header>
-                <nav>
-                    <ul>
-                        <li><a href="/#">Home</a></li>
-                        <li><a href="/#">Services</a></li>
-                        <li><a href="/#">About</a></li>
-                        <li><a href="/#">Contact</a></li>
-                    </ul>
-                    <img src="https://cdn-icons-png.flaticon.com/512/1432/1432527.png" alt={""} />
+                <nav className="navbar navbar-expand">
+                    <a className="navbar-brand"><img className="" src="https://cdn-icons-png.flaticon.com/512/1432/1432527.png" height={30} width={30} alt={""} /></a>
+                        <ul className="navbar-nav">
+                            <li className="nav-item"><a className="nav-link" href="/#">Home</a></li>
+                            <li className="nav-item"><a className="nav-link" href="/#">Services</a></li>
+                            <li className="nav-item"><a className="nav-link" href="/#">About</a></li>
+                            <li className="nav-item"><a className="nav-link" href="/#">Contact</a></li>
+                        </ul>
                 </nav>
             </header>
         </>
