@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Header/>
     <Login/>
-    {/* <Footer/> */}
+    <Footer/>
   </React.StrictMode>
 );
 

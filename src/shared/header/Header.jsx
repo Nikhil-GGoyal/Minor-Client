@@ -4,13 +4,13 @@ function Header() {
         <>
             <header>
                 <nav className="navbar navbar-expand">
-                    <a className="navbar-brand"><img className="" src="https://cdn-icons-png.flaticon.com/512/1432/1432527.png" height={30} width={30} alt={""} /></a>
-                        <ul className="navbar-nav">
-                            <li className="nav-item"><a className="nav-link" href="/#">Home</a></li>
-                            <li className="nav-item"><a className="nav-link" href="/#">Services</a></li>
-                            <li className="nav-item"><a className="nav-link" href="/#">About</a></li>
-                            <li className="nav-item"><a className="nav-link" href="/#">Contact</a></li>
-                        </ul>
+                    <a className="navbar-brand" href="/#"><img className="" src="https://cdn-icons-png.flaticon.com/512/1432/1432527.png" height={30} width={30} alt={""} /></a>
+                    <ul className="navbar-nav">
+                        <li className="nav-item"><a className="nav-link" href="/#">Home</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/#">Services</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/#">About</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/#">Contact</a></li>
+                    </ul>
                 </nav>
             </header>
         </>

@@ -2,14 +2,15 @@ header {
     background: #FFCD38;
 }
 
-nav ul {
-    padding: 0px 20px;
-}
 li a {
     cursor: pointer;
     position: relative;
     text-decoration: none;
     color: inherit;
+}
+
+header ul li{
+       text-transform: capitalize;
 }
 
 header ul li a:hover {
@@ -34,9 +35,6 @@ li a:hover::after {
     width: 80%;
     transform: translateX(10%);
 }
-
-
-
-nav ul li:nth-child(1) {
-    margin-right: 10px;
+.navbar-brand{
+    margin-left: 20px;
 }
