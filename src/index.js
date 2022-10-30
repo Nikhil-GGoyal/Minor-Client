@@ -15,7 +15,6 @@ root.render(
     <Navbar />
     <Login />
     <Footer />
-
   </React.StrictMode>
 );
 
