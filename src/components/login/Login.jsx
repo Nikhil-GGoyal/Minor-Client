@@ -23,7 +23,7 @@ function Login() {
             const data = res.json()
             if (res.status === 400) {
                 alert("somthing went wrong")
-            }else if(res.status === 200){
+            } else if (res.status === 200) {
                 alert("all ok ")
             }
         } catch {
