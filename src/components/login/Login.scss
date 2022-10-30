@@ -33,16 +33,6 @@ hr {
     margin-bottom: .8px;
 }
 
-
-
-.text p {
-    font-size: .8rem;
-    padding-bottom: 2rem;
-}
-
-.text {
-    text-align: center;
-
 .container div h1,
 h3 {
     line-height: 2;
@@ -106,13 +96,13 @@ h3 {
 
 .container button {
     height: 50px;
-    background: rgba(0, 0, 0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 2px;
     color: black;
     border: none;
     font-size: 1rem;
     transition: all 0.5s ease-in-out;
-    font-weight:500;
+    font-weight: 500;
 }
 
 .container button:hover {
@@ -124,4 +114,12 @@ h3 {
     .container {
         width: 90%;
     }
+
+    .container div h1,
+    h3 {
+        line-height: 1;
+        font-size: 1.2em;
+
+    }
+
 }
