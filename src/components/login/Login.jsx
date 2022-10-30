@@ -33,11 +33,12 @@ function Login() {
 
     }
     return (
-        <div className="App">
-            <form method="POST" onSubmit={userlogin} className="container App">
+        <div>
+            <form method="POST" onSubmit={userlogin} className="container">
                 <div>
                     <h1>Log in</h1>
                     <h3>Mark the attendance in a digital way!</h3>
+                    <hr />
                 </div>
                 <div className="your-input">
                     <div className="your-input">
