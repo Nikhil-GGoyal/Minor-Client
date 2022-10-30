@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import Login from "./components/login/login"
 import Navbar from "./components/Navbar"
+
+import Login from "./components/login/Login"
 import reportWebVitals from './reportWebVitals';
 import Footer from './shared/footer/Footer';
 
@@ -15,6 +17,11 @@ root.render(
     <Navbar />
     <Login />
     <Footer />
+
+    <Header/>
+    <Login/>
+    {/* <Footer/> */}
+
   </React.StrictMode>
 );
 

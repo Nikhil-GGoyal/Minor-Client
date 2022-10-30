@@ -8,20 +8,24 @@
 }
 
 .container {
+
     width: 550px;
     height: 560px;
+
+    width: 30vw;
+    margin-top: 50px;
+    height: 70vh;
+
     background: #fff;
     box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 7px;
+    border-radius: 1%;
+    border: 0.6px solid #8c8c8c;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 1.5rem;
 }
+
 
 hr {
     margin-top: 0.1px;
@@ -38,6 +42,12 @@ hr {
 
 .text {
     text-align: center;
+
+.container div h1,
+h3 {
+    line-height: 2;
+    font-size: 1.3em;
+
 }
 
 .input {
@@ -62,16 +72,15 @@ hr {
     position: absolute;
     top: 30%;
     left: 10px;
-    font-size: 1.1rem;
-    color: black;
-    transition: .2s;
+    font-size: 0.9rem;
+    transition: .3s;
 }
 
 .input input:focus~label,
 .input input:valid~label {
     top: 12%;
-    font-size: 1rem;
-    color: Black;
+    font-size: 0.8rem;
+    color: inherit;
 }
 
 .input input:focus {
@@ -79,35 +88,40 @@ hr {
     border-color: black;
 }
 
-.forgot-password-link {
-    width: 140px;
+.container a {
     padding: .2rem;
-    text-align: center;
+}
+
+.container a {
     text-decoration: none;
-    font-weight: bolder;
-    color: black;
-    transition: .3s;
-    border-radius: 12px;
+    width: max-content;
+    color: inherit;
+    font-style: italic;
+    transition: all 0.5s ease-in-out;
 }
 
-.forgot-password-link:hover {
-    background: black;
-    color: #fff;
+.container a:hover {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-button {
+.container button {
     height: 50px;
-    background: black;
-    outline: none;
+    background: rgba(0, 0, 0,0.6);
+    border-radius: 2px;
+    color: black;
     border: none;
-    border-radius: 30px;
-    border-color: black;
-    color: white;
     font-size: 1rem;
-    font-weight: bolder;
+    transition: all 0.5s ease-in-out;
+    font-weight:500;
 }
 
-button:hover {
-    background: black;
+.container button:hover {
+    background: rgb(26, 25, 25);
     color: #fff;
+}
+
+@media (max-width:990px) {
+    .container {
+        width: 90%;
+    }
 }
