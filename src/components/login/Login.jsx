@@ -7,6 +7,13 @@ function login() {
                 <h1>Log in</h1>
                 <h3>Mark the attendance in a digital way!</h3>
             </div>
+
+            <hr />
+            <div class="your-input">
+                <div class="input">
+                    <input type="text" name="email" id="email" required />
+                    <label for="email">Email</label>
+
             <div className="your-input">
                 <div className="input">
                     <input type="text" name="email" id="email" required autoComplete="off" />

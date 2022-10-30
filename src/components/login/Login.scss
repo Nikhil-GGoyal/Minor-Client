@@ -8,9 +8,14 @@
 }
 
 .container {
+
+    width: 550px;
+    height: 560px;
+
     width: 30vw;
     margin-top: 50px;
     height: 70vh;
+
     background: #fff;
     box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
     border-radius: 1%;
@@ -21,10 +26,28 @@
     padding: 1.5rem;
 }
 
+
+hr {
+    margin-top: 0.1px;
+    border: 2px dashed #000000;
+    margin-bottom: .8px;
+}
+
+
+
+.text p {
+    font-size: .8rem;
+    padding-bottom: 2rem;
+}
+
+.text {
+    text-align: center;
+
 .container div h1,
 h3 {
     line-height: 2;
     font-size: 1.3em;
+
 }
 
 .input {
@@ -37,7 +60,7 @@ h3 {
 .your-input input {
     width: 100%;
     height: 50px;
-    padding-top: 1.1rem;
+    padding-top: 1.4rem;
     padding-left: 9px;
     outline: none;
     border: 1px solid #8c8c8c;
