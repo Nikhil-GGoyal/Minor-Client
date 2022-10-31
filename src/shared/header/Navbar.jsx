@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { BsPerson } from "react-icons/bs";
+import Logo from "../../fav.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 // import Logo from "../assets/Logo1.png";
@@ -11,7 +12,7 @@ export default function Navbar() {
   return (
     <Container state={isNavOpen ? 1 : 0}>
       <div className="brand">
-        <a href="/"><img src="" alt="logo" /></a>
+        <a href="/"><img src={Logo} alt={"logo"} /></a>
       </div>
       <div className="toggle">
         {isNavOpen ? (
@@ -70,10 +71,12 @@ const Container = styled.nav`
   align-items: center;
   font-size:1rem;
   .brand {
+    margin-left:20px;
     img {
+      border-radius:50%;
+      border:2px solid white;
       cursor: pointer;
-      width:100%;
-      height:4.5rem;
+      height:4.5vh;
     }
   }
   .toggle {
@@ -81,7 +84,7 @@ const Container = styled.nav`
   }
   .links {
     ul {
-      margin-right:5rem;
+      margin-right:7rem;
       margin-top:1rem;
       display: flex;
       gap: 5rem;
