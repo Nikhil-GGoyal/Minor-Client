@@ -65,7 +65,7 @@ export default function Navbar() {
 
 const Container = styled.nav`
   display: flex;
-  background-color:black;
+  background-color:rgba(79, 74, 74, 0.827);;
   justify-content: space-between;
   align-items: center;
   font-size:1rem;
