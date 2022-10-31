@@ -3,18 +3,12 @@ import ReactDOM from 'react-dom/client';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import './index.css';
 import App from './App';
-// import Login from "./components/login/login"
-import Navbar from "./shared/header/Navbar"
-import Login from "./components/login/Login"
 import reportWebVitals from './reportWebVitals';
-import Footer from './shared/footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <Login />
-    <Footer />
+    <App />
   </React.StrictMode>
 );
 

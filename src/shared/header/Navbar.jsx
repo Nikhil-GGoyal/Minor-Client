@@ -31,16 +31,16 @@ export default function Navbar() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="#"> Faculty</a>
+            <a href="/Faculty"> Faculty</a>
           </li>
           <li>
-            <a href="#">Student</a>
+            <a href="/Student">Student</a>
           </li>
           <li>
-            <a href="#">Assign Faculty</a>
+            <a href="/Authfac">Assign Faculty</a>
           </li>
           <li>
-            <a href="/">Admin Panel</a>
+            <a href="/Admin">Admin Panel</a>
           </li>
         </ul>
       </div>
