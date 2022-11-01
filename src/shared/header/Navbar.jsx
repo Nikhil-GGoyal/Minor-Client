@@ -121,7 +121,7 @@ const Container = styled.nav`
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     position: relative;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     z-index: 10;
     .account-info {
       display: none;
@@ -147,18 +147,18 @@ const Container = styled.nav`
       overflow-x: hidden;
       top: 0;
       right: 0;
-      width: ${({ state }) => (state ? "60%" : "0%")};
+      width: ${({ state }) => (state ? "40%" : "0%")};
       height: 100vh;
-      background-color: black;
-      opacity: 0;
-      visibility: hidden;
+      background-color:rgba(255, 200, 0, 0.745);
       transition: 0.4s ease-in-out;
       ul {
-        flex-direction: column;
+        margin-top:90px;
+        display:block;
         text-align: center;
         height: 100%;
         justify-content: center;
         li {
+          margin-top:50px;
           a {
             color: white;
           }
