@@ -9,7 +9,7 @@ function Login() {
     const userlogin = async (e) => {
         e.preventDefault()
         try {
-            const res = await fetch('http://localhost:3000/users/Login', {
+            const res = await fetch('http://localhost:4000/users/Login', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -20,11 +20,13 @@ function Login() {
                     Fac_ID
                 })
             })
-            const data = res.json()
+            const data = await res.json()
+            console.log(res.json);
             if (res.status === 400) {
                 alert("somthing went wrong")
             } else if (res.status === 200) {
                 alert("all ok ")
+                localStorage.setItem("token", JSON.stringify(data));
             }
         } catch {
 
