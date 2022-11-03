@@ -10,13 +10,12 @@ function Cards() {
         <>
             <Header />
             <div className="card-container">
-                <div className="ro  w">
+                <div className="row">
                     {
                         record.map((data, index) =>
                             <div key={index} className="col-sm">
-                                <Section link="/header" header={data} />
+                                <Section link="/attendance-data" header={data} />
                             </div>
-
                         )
                     }
                 </div>

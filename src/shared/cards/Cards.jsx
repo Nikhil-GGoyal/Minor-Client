@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./cards.scss"
 function Cards(prop) {
-    const [course,setcourse] = useState('')
-    localStorage.setItem("course",course)
-    console.log(course);
+    const [course, setcourse] = useState('')
+    localStorage.setItem("course", course)
     return (
         <>
             <div className="card">
@@ -14,10 +13,10 @@ function Cards(prop) {
                 </div>
                 <div className="buttons">
                     <a id="detailed" href={prop.link}
-                     onClick={()=>{
-                        setcourse(prop.header)
-                     }}
-                     >Click</a>
+                        onClick={() => {
+                            setcourse(prop.header)
+                        }}
+                    >Click</a>
                 </div>
             </div>
         </>
