@@ -5,11 +5,10 @@ function Login() {
     const [Email, setEmail] = useState('')
     const [Password, setPassword] = useState('')
     const [Fac_ID, setFac_ID] = useState('')
-
     const userlogin = async (e) => {
-        e.preventDefault()
+        e.preventDefault();
         try {
-            const res = await fetch('http://localhost:4000/users/Login', {
+            const res = await fetch('/users/Login', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -21,15 +20,15 @@ function Login() {
                 })
             })
             const data = await res.json()
-            console.log(res.json);
+            console.log(data);
             if (res.status === 400) {
                 alert("somthing went wrong")
             } else if (res.status === 200) {
                 alert("all ok ")
                 localStorage.setItem("token", JSON.stringify(data));
             }
-        } catch {
-
+        } catch(err) {
+            console.log(err);
         }
 
 
