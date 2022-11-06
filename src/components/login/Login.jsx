@@ -1,7 +1,9 @@
 import "./Login.scss"
 import React from 'react';
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 function Login() {
+    const redirect = useNavigate()
     const [Email, setEmail] = useState('')
     const [Password, setPassword] = useState('')
     const [Fac_ID, setFac_ID] = useState('')
@@ -24,8 +26,9 @@ function Login() {
             if (res.status === 400) {
                 alert("somthing went wrong")
             } else if (res.status === 200) {
-                alert("all ok ")
+                
                 localStorage.setItem("token", JSON.stringify(data));
+                redirect('/cards')
             }
         } catch (err) {
             console.log(err);
@@ -66,7 +69,7 @@ function Login() {
                     </div>
                 </div>
                 <a href="/#">Forgot Password?</a>
-                <button type="submit">Sign in</button>
+                <button  type="submit">Sign in</button>
             </form>
         </div>
     );
