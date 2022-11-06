@@ -12,44 +12,51 @@ function Table() {
                 courses,
             })
             const student = res.data
-            setdata(student.found)
+            setdata(Array.from(student.found))
         } catch (err) {
             console.log(err);
         }
 
     }
-    // console.log(data);
-    const detail = Array.from(data)
-    console.log(detail);
     useEffect(() => {
         getstudent()
     }, [])
 
     return (<>
-        <div className='tables'>
-            <table className="table table-striped table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        detail.map((data, index) =>
-                            <tr key={index}>
-                                <td>{data.Sname}</td>
-                                <td>{data.Course}</td>
-                                <td>{data.Enroll_no}</td>
-                                <td>{data.Attendance}</td>
+        {
+            data.length > 0 ?
+                <div className='tables'>
+                    <table className="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
                             </tr>
-                        )
-                    }
-                </tbody>
-            </table>
-        </div>
+                        </thead>
+                        <tbody>
+                            {
+                                data.map((data, index) =>
+                                    <tr key={index}>
+                                        <td>{data.Sname}</td>
+                                        <td>{data.Course}</td>
+                                        <td>{data.Enroll_no}</td>
+                                        <td>{data.Attendance}</td>
+                                    </tr>
+                                )
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                : <main className="flex-shrink-0">
+                    <div className="mx-auto" style={{ width: '40%' }}>
+                        <h1 className="mt-5">Data Not Found</h1>
+                        <p className="lead">Thank you for using this website but sorry data not found the choosen faculty didn't alloted any course.</p>
+                        <p><a href="/Contact">Click here</a>&nbsp;to contact for course allotment</p>
+                    </div>
+                </main>
+        }
     </>);
 }
 
